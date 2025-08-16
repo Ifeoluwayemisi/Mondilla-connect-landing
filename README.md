@@ -83,7 +83,7 @@ npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --minify
 ---
 
 ## Lighthouse & Optimization Notes
-- - **Performance:** Optimized images, minified Tailwind CSS, and smooth animations.  
+- **Performance:** Optimized images, minified Tailwind CSS, and smooth animations.  
   Current Lighthouse scores: **Mobile: 50/100**, **Desktop: 70/100**.  
   *Note:* These scores are **before further optimizations** such as image lazy-loading, caching, and code splitting, which could improve load times and performance.
 - **Accessibility:** High accessibility standards applied; semantic HTML, color contrast, keyboard navigation. Score: **89/100**.  
