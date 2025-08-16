@@ -1,5 +1,5 @@
-node_modules/
+/node_modules/
 
-assets/css/style.css
+/assets/css/style.css/
 
-.vscode/
+/.vscode/
