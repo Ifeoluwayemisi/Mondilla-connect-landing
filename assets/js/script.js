@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // ========== MOBILE MENU ==========
+    //  MOBILE MENU
     const menuBtn = document.getElementById("menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ========== SMOOTH SCROLL & CLOSE MENU ==========
+    // SMOOTH SCROLL & CLOSE MENU
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", e => {
             e.preventDefault();
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // ========== CONTACT FORM ==========
+    // CONTACT FORM
     const contactForm = document.getElementById("contactForm");
     if (contactForm) {
         contactForm.addEventListener("submit", e => {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ========== DARK MODE ==========
+    // DARK MODE
     const darkToggle = document.getElementById("darkToggle");
     const darkIcon = document.getElementById("darkIcon");
     const html = document.documentElement;
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ========== GSAP ANIMATIONS (DEFERRED ON MOBILE) ==========
+    // GSAP ANIMATIONS
     if (typeof gsap !== "undefined") {
         const isDesktop = window.innerWidth > 768; // Only heavy animations on desktop
         if (!isDesktop) return; // skip GSAP for mobile
