@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "tailwindcss": "^3.4.17"
-  }
+"dependencies": {
+  "tailwindcss": "^3.4.17"
+},
 }
