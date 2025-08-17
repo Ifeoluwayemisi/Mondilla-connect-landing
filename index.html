@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,10 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/logos/favicon.ico">
     <!-- Boxicon CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">    
-    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- GSAP & ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
@@ -21,11 +22,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="bg-[#FFF8E6] text-slate-800">
 
     <!-- Header -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <a href="#home" class="flex items-center space-x-2">
@@ -42,22 +44,25 @@
                         <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
                     </nav>
 
-                    <button id="darkToggle" class="ml-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full">
+                    <button id="darkToggle"
+                        class="ml-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full">
                         <i id="darkIcon" class="bx bx-moon text-xl"></i>
-                    </button> 
+                    </button>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />       
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-800" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md opacity-0 transform -translate-y-4 transition-all duration-300 ease-in-out">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white shadow-md opacity-0 transform -translate-y-4 transition-all duration-300 ease-in-out">
             <nav class="flex flex-col space-y-2 p-4">
                 <a href="#home" class="hover:text-blue-600 transition">Home</a>
                 <a href="#features" class="hover:text-blue-600 transition">Features</a>
@@ -69,44 +74,49 @@
 
     <!-- Hero Section -->
     <section id="home" class="bg-slate-900 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <!-- Left: Text -->
-            <div id="hero-text">
-                <h1 class="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 text-white">
-                    Collaborate. Organize. Succeed.
-                </h1>
-                <p class="text-lg text-slate-300 mb-8">
-                    Mondilla Connect helps teams plan, track, and deliver projects faster with real-time collaboration tools.
-                </p>
-                <div class="flex flex-col sm:flex-row sm:items-center gap-4">
-                    <a href="#pricing" class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow hover:bg-blue-500 transition">
-                        Get Started
-                    </a>
-                    <a href="#features" class="px-6 py-3 bg-slate-100 text-slate-500 font-medium rounded-lg hover:bg-blue-900 transition">
-                        Learn More
-                    </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left: Text -->
+                <div id="hero-text">
+                    <h1 class="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 text-slate-900">
+                        Collaborate. Organize. Succeed.
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-8">
+                        Mondilla Connect helps teams plan, track, and deliver projects faster with real-time
+                        collaboration tools.
+                    </p>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <a href="#pricing"
+                            class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow hover:bg-blue-500 transition">
+                            Get Started
+                        </a>
+                        <a href="#features"
+                            class="px-6 py-3 bg-slate-100 text-slate-500 font-medium rounded-lg hover:bg-blue-900 transition">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <!-- Right: Image -->
+                <div id="hero-img" class="flex justify-center lg:justify-end">
+                    <img src="assets/images/logos/Hero_Illustration.svg" alt="collaboration Illustration"
+                        class="max-w-full h-auto">
                 </div>
             </div>
-            <!-- Right: Image -->
-            <div id="hero-img" class="flex justify-center lg:justify-end">
-                <img src="assets/images/logos/Hero_Illustration.svg" alt="collaboration Illustration" class="max-w-full h-auto">
-            </div>
         </div>
-    </div>
 
-    <!-- Single Subtle Divider -->
-    <div class="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-b from-slate-900 to-[#FFF8E6]"></div>
-</section>
+        <!-- Single Subtle Divider -->
+        <div class="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-b from-slate-900 to-[#FFF8E6]"></div>
+    </section>
 
-<!-- Features Section -->
-<section id="features" class="py-16 bg-gradient-to-b from-[#FFF5DO] to-[#FFF2D9] relative z-10">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-12">Powerful Features</h2>
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gradient-to-b from-[#FFF5DO] to-[#FFF2D9] relative z-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Powerful Features</h2>
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
                 <!-- Feature 1 -->
-                <a href="#features" class="bg-white p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                <a href="#features"
+                    class="bg-white p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300">
                     <img src="assets/images/logos/og-image.png" alt="Collaboration Icon" class="w-13 h-13 mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2">Real-Time Collaboration</h3>
                     <p class="text-gray-600">Work with your team instantly and share updates seamlessly.</p>
@@ -114,14 +124,17 @@
 
 
                 <!-- Feature 2 -->
-                <a href="#features" class="bg-white p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300">
-                    <img src="assets/images/logos/og-image.png" alt="Task Management Icon" class="w-13 h-13 mx-auto mb-4">
+                <a href="#features"
+                    class="bg-white p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                    <img src="assets/images/logos/og-image.png" alt="Task Management Icon"
+                        class="w-13 h-13 mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2">Task Management</h3>
                     <p class="text-gray-600">Keep track of tasks and deadlines in one central place.</p>
                 </a>
 
                 <!-- Feature 3 -->
-                <a href="#features" class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                <a href="#features"
+                    class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition duration-300">
                     <img src="assets/images/logos/og-image.png" alt="Integration Icon" class="w-13 h-13 mx-auto mb-4">
                     <h3 class="text-xl font-semibold mb-2">Seamless Integrations</h3>
                     <p class="text-gray-600">Connect with your favorite tools for an optimized workflow.</p>
@@ -147,12 +160,17 @@
                         <li>Basic Support</li>
                         <li>Limited Access</li>
                     </ul>
-                    <a href="#contact" class="mt-auto bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-center transition">Get Started</a>
+                    <a href="#contact"
+                        class="mt-auto bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-center transition">Get
+                        Started</a>
                 </div>
 
                 <!-- Standard Plan -->
-                <div class="bg-blue-600 text-white rounded-2xl shadow-lg hover:shadow-xl transition p-6 flex flex-col relative">
-                    <span class="absolute top-0 right-0 bg-yellow-400 text-black text-xs px-3 py-1 rounded-bl-lg font-semibold">Most Popular</span>
+                <div
+                    class="bg-blue-600 text-white rounded-2xl shadow-lg hover:shadow-xl transition p-6 flex flex-col relative">
+                    <span
+                        class="absolute top-0 right-0 bg-yellow-400 text-black text-xs px-3 py-1 rounded-bl-lg font-semibold">Most
+                        Popular</span>
                     <h3 class="text-xl font-semibold mb-4">Standard</h3>
                     <p class="mb-6">Best for growing teams.</p>
                     <p class="text-4xl font-bold mb-6">$20<span class="text-base font-normal">/mo</span></p>
@@ -161,9 +179,11 @@
                         <li>Basic Support</li>
                         <li>Limited Access</li>
                     </ul>
-                    <a href="#contact" class="mt-auto bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg text-center transition">Get Started</a>
+                    <a href="#contact"
+                        class="mt-auto bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg text-center transition">Get
+                        Started</a>
                 </div>
-                
+
                 <!-- Premium Plan -->
                 <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6 flex flex-col">
                     <h3 class="text-xl font-semibold mb-4">Premium</h3>
@@ -174,7 +194,9 @@
                         <li>Basic Support</li>
                         <li>Limited Access</li>
                     </ul>
-                    <a href="#contact" class="mt-auto bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-center transition">Get Started</a>
+                    <a href="#contact"
+                        class="mt-auto bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-center transition">Get
+                        Started</a>
                 </div>
             </div>
         </div>
@@ -189,17 +211,22 @@
             <form action="/" id="contactForm" class="bg-white p-6 rounded-lg shadow-md space-y-4">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required
+                        class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-200">
                 </div>
                 <div>
                     <label for="email" class="email text-sm font-medium text-gray-700 mb-1">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                    <input type="email" id="email" name="email" placeholder="Your Email"
+                        class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-200">
                 </div>
                 <div>
                     <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message:</label>
-                    <textarea name="message" rows="4" id="message" placeholder="Your Message" required class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-200"></textarea>
+                    <textarea name="message" rows="4" id="message" placeholder="Your Message" required
+                        class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-200"></textarea>
                 </div>
-                <button class="w-full bg-blue-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+                <button
+                    class="w-full bg-blue-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">Send
+                    Message</button>
             </form>
         </div>
     </section>
@@ -228,4 +255,5 @@
     <!-- Scripts -->
     <script src="assets/js/script.js" defer></script>
 </body>
+
 </html>
